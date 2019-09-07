@@ -2,9 +2,12 @@
 <!--Footer-->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
-
   <!-- Social icons -->
   <div class="pb-2 mt-5 pt-5">
+    {{ if $.Site.Params.twitter }}
+        <a href="{{ $.Site.Params.twitter }}" target="_blank" rel="noopener"><i class="fab fa-twitter mr-3" aria-hidden="true"></i></a>
+    {{ end }}
+
     {{ if $.Site.Params.github }}
       <a href="{{ $.Site.Params.github }} " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
     {{ end }}
@@ -18,10 +21,6 @@
 
     {{ if $.Site.Params.googleplus }}
     <a href="{{ $.Site.Params.googleplus }}" target="_blank" rel="noopener"><i class="fab fa-google-plus-g mr-3" aria-hidden="true"></i></a>
-    {{ end }}
-
-    {{ if $.Site.Params.twitter }}
-        <a href="{{ $.Site.Params.twitter }}" target="_blank" rel="noopener"><i class="fab fa-twitter mr-3" aria-hidden="true"></i></a>
     {{ end }}
 
     {{ if $.Site.Params.instagram }}
