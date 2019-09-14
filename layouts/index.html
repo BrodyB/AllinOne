@@ -2,19 +2,6 @@
    {{ partial "site-navbar.html" . }} 
    {{ partial "homepage-header.html" . }}  
 
-  <!-- Welcome Word -->
-  <!--
-  {{ with $.Site.Params.welcome_head }}
-    <section class="container pt-5 text-center">
-      <h1 class="display-3">{{ $.Site.Params.welcome_head }}</h1>
-      {{ with $.Site.Params.welcome_word }}
-      <p style="font-size:1.8rem; color: var(--text-light);">{{ $.Site.Params.welcome_word }}</p>
-      {{ end }}
-    </section>
-  {{ end }}
-  -->
-  <!-- /.Welcome Word -->
-
   <!-- Things I've Worked On -->
   {{ with $.Site.Params.welcome_head }}
   <section class="container-fluid pt-4 text-center">
@@ -22,30 +9,34 @@
 
     <div class="row">
       <div class="col-sm-auto"></div>
+
       <div class="col-sm">
-        {{ if $.Site.Params.recentGame1Page}}
-          <a href="{{$.Site.Params.recentGame1Page}}">
-            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.recentGame1Thumb | absURL }}" alt="" >
-            <h3 class="display-6 pt-3">{{ $.Site.Params.recentGame1Title }}</h3>
+        {{ if $.Site.Params.gameKor }}
+          <a href="{{$.Site.Params.gameKor.page}}">
+            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameKor.thumb | absURL }}" alt="" >
+            <h3 class="display-6 pt-3">{{ $.Site.Params.gameKor.title }}</h3>
           </a>
         {{ end }}
       </div>
+
       <div class="col-sm">
-        {{ if $.Site.Params.recentGame2Page}}
-          <a href="{{$.Site.Params.recentGame2Page}}">
-            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.recentGame2Thumb | absURL }}" alt="" >
-            <h3 class="display-6 pt-3">{{ $.Site.Params.recentGame2Title }}</h3>
+        {{ if $.Site.Params.gameKor }}
+          <a href="{{$.Site.Params.gameKor.page}}">
+            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameKor.thumb | absURL }}" alt="" >
+            <h3 class="display-6 pt-3">{{ $.Site.Params.gameKor.title }}</h3>
           </a>
         {{ end }}
       </div>
+
       <div class="col-sm">
-        {{ if $.Site.Params.recentGame3Page}}
-          <a href="{{$.Site.Params.recentGame3Page}}">
-            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.recentGame3Thumb | absURL }}" alt="" >
-            <h3 class="display-6 pt-3">{{ $.Site.Params.recentGame3Title }}</h3>
+        {{ if $.Site.Params.gameKor }}
+          <a href="{{$.Site.Params.gameKor.page}}">
+            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameKor.thumb | absURL }}" alt="" >
+            <h3 class="display-6 pt-3">{{ $.Site.Params.gameKor.title }}</h3>
           </a>
         {{ end }}
       </div>
+
       <div class="col-sm-auto"></div>
     </div>
   </section>
