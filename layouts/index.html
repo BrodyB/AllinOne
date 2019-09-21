@@ -11,28 +11,28 @@
       <div class="col-sm-auto"></div>
 
       <div class="col-sm">
-        {{ if $.Site.Params.gameKor }}
-          <a href="{{$.Site.Params.gameKor.page}}">
-            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameKor.thumb | absURL }}" alt="" >
-            <h3 class="display-6 pt-3">{{ $.Site.Params.gameKor.title }}</h3>
+        {{ if $.Site.Params.gameOne }}
+          <a href="{{$.Site.Params.gameOne.page}}">
+            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameOne.thumbWide | absURL }}" >
+            <h4 class="pt-3">{{ $.Site.Params.gameOne.title }}</h4>
           </a>
         {{ end }}
       </div>
 
       <div class="col-sm">
-        {{ if $.Site.Params.gameKor }}
-          <a href="{{$.Site.Params.gameKor.page}}">
-            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameKor.thumb | absURL }}" alt="" >
-            <h3 class="display-6 pt-3">{{ $.Site.Params.gameKor.title }}</h3>
+        {{ if $.Site.Params.gameTwo }}
+          <a href="{{$.Site.Params.gameTwo.page}}" target="_blank">
+            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameTwo.thumbWide | absURL }}" >
+            <h4 class="pt-3">{{ $.Site.Params.gameTwo.title }}</h4>
           </a>
         {{ end }}
       </div>
 
       <div class="col-sm">
-        {{ if $.Site.Params.gameKor }}
-          <a href="{{$.Site.Params.gameKor.page}}">
-            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameKor.thumb | absURL }}" alt="" >
-            <h3 class="display-6 pt-3">{{ $.Site.Params.gameKor.title }}</h3>
+        {{ if $.Site.Params.gameThree }}
+          <a href="{{$.Site.Params.gameThree.page}}">
+            <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameThree.thumbWide | absURL }}" >
+            <h4 class="pt-3">{{ $.Site.Params.gameThree.title }}</h4>
           </a>
         {{ end }}
       </div>
