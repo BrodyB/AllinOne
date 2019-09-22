@@ -14,17 +14,18 @@
         {{ if $.Site.Params.gameOne }}
           {{ if isset $.Site.Params.gameOne "url" }}
             <a href="{{$.Site.Params.gameOne.url}}" target="_blank">
-              <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameOne.thumbWide | absURL }}" >
+              <img class="border border-game shadow" src="{{ $.Site.Params.gameOne.thumbWide | absURL }}" >
               <h4 class="pt-3">{{ $.Site.Params.gameOne.title }}</h4>
             </a>
           {{ else }}
             {{ if isset $.Site.Params.gameOne "page" }}
               <a href="{{$.Site.Params.gameOne.page}}" target="_blank">
-                <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameOne.thumbWide | absURL }}" >
+                <img class="border border-game shadow" src="{{ $.Site.Params.gameOne.thumbWide | absURL }}" >
                 <h4 class="pt-3">{{ $.Site.Params.gameOne.title }}</h4>
               </a>
             {{ else }}
-
+              <img class="border border-game shadow" src="{{ $.Site.Params.gameOne.thumbWide | absURL }}" >
+              <h4 class="pt-3">{{ $.Site.Params.gameOne.title }}</h4>
             {{ end }}
           {{ end }}
         {{ end }}
@@ -34,17 +35,17 @@
         {{ if $.Site.Params.gameTwo }}
           {{ if isset $.Site.Params.gameTwo "url" }}
             <a href="{{$.Site.Params.gameTwo.url}}" target="_blank">
-              <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameTwo.thumbWide | absURL }}" >
+              <img class="border border-game shadow" src="{{ $.Site.Params.gameTwo.thumbWide | absURL }}" >
               <h4 class="pt-3">{{ $.Site.Params.gameTwo.title }}</h4>
             </a>
           {{ else }}
             {{ if isset $.Site.Params.gameTwo "page" }}
               <a href="{{$.Site.Params.gameTwo.page}}">
-                <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameTwo.thumbWide | absURL }}" >
+                <img class="border border-game shadow" src="{{ $.Site.Params.gameTwo.thumbWide | absURL }}" >
                 <h4 class="pt-3">{{ $.Site.Params.gameTwo.title }}</h4>
               </a>
             {{ else }}
-              <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameTwo.thumbWide | absURL }}" >
+              <img class="border border-game shadow" src="{{ $.Site.Params.gameTwo.thumbWide | absURL }}" >
               <h4 class="pt-3">{{ $.Site.Params.gameTwo.title }}</h4>
             {{ end }}
           {{ end }}
@@ -55,17 +56,17 @@
         {{ if $.Site.Params.gameThree }}
           {{ if isset $.Site.Params.gameThree "url" }}
             <a href="{{$.Site.Params.gameThree.url}}" target="_blank">
-              <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameThree.thumbWide | absURL }}" >
+              <img class="border border-game shadow" src="{{ $.Site.Params.gameThree.thumbWide | absURL }}" >
               <h4 class="pt-3">{{ $.Site.Params.gameThree.title }}</h4>
             </a>
           {{ else }}
             {{ if isset $.Site.Params.gameThree "page" }}
               <a href="{{$.Site.Params.gameThree.page}}">
-                <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameThree.thumbWide | absURL }}" >
+                <img class="border border-game shadow" src="{{ $.Site.Params.gameThree.thumbWide | absURL }}" >
                 <h4 class="pt-3">{{ $.Site.Params.gameThree.title }}</h4>
               </a>
             {{ else }}
-              <img class="rounded border border-primary shadow" src="{{ $.Site.Params.gameThree.thumbWide | absURL }}" >
+              <img class="border border-game shadow" src="{{ $.Site.Params.gameThree.thumbWide | absURL }}" >
               <h4 class="pt-3">{{ $.Site.Params.gameThree.title }}</h4>
             {{ end }}
           {{ end }}
