@@ -7,6 +7,9 @@
 } */
 :root {
 
+  --bg-color: #13161a;
+  --card-color: #20252c;
+
   --grey-l4: #f7f7f7;
   --grey-l3: #dedede;
   --grey-l2: #c6c6c6;
@@ -23,6 +26,7 @@
   --text-dark: #333333;
   --text-grey: #646464;
   --text-light: #959595;
+  --text-verylight: #e0e0e0;
 }
 
 /* 
@@ -34,7 +38,7 @@ Layout
 body {
   font-family: -apple-system,BlinkMacSystemFont,'Raleway', "Helvetica Neue", Arial, "PingFang SC", "Lantinghei SC", "Microsoft YaHei", sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   /* color: #333; */
-  color: var(--text-dark);
+  color: var(--text-verylight);
   line-height: 1.6;
 }
 
@@ -76,11 +80,12 @@ a:active .active-color  {
 
 .bg-light {
   /* background-color: #f7f7f7!important; */
-  background-color: var(--grey-l4)!important;
+  /* background-color: var(--grey-l4)!important; */
+  background-color: var(--bg-color)!important;
 }
 
 .white-bg {
-  background: white;
+  background: var(--card-color);
 }
 
 .text-grey {
