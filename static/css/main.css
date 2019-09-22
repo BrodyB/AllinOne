@@ -36,7 +36,7 @@ Layout
 */
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,'Raleway', "Helvetica Neue", Arial, "PingFang SC", "Lantinghei SC", "Microsoft YaHei", sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: 'Exo 2', "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji";
   color: var(--text-verylight);
   line-height: 1.6;
 }
@@ -642,8 +642,7 @@ carousel
 
 
 .headfont {
-  font-family: 'Raleway', "Helvetica Neue", Arial,  "PingFang SC", "Lantinghei SC", "Microsoft YaHei", sans-serif !important;
-
+  font-family: 'Viga', "Exo 2", "Helvetica Neue", Arial, sans-serif !important;
 }
 
 .carousel a, .carousel a:hover, .carousel a:active {
@@ -1172,7 +1171,7 @@ toc-nav  scrollspy
 
 .no-bullet .date {
   font-size: 18px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Exo 2', "Helvetica Neue", Arial, sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
   color: #333;
