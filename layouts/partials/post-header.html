@@ -21,10 +21,12 @@
       <li>{{ .Date.Format "Jan 2, 2006" }}</li>
     {{ end }}
 
+    <!--
     {{ if not .Site.Params.noshowreadtime }}
       <li class="middot"></li>
       <li>{{ i18n "readingTime" .ReadingTime }}</li>
     {{ end }}
+    -->
   </ul>
   {{ with .Params.img }}
     <div class="view">
